@@ -1,0 +1,25 @@
+﻿<Window x:Class="pract8_RPO.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pract8_RPO"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Background="WhiteSmoke">
+            <TextBlock Text="Меню" FontSize="18" FontWeight="Bold" Margin="10,20,10,10" HorizontalAlignment="Center"/>
+            <Button Content="Главная" Style="{StaticResource SidebarButton}" Click="Nav_Home_Click"/>
+            <Button Content="Каталог" Style="{StaticResource SidebarButton}" Click="Nav_Catalog_Click"/>
+            <Button Content="Корзина" Style="{StaticResource SidebarButton}" Click="Nav_Cart_Click"/>
+            <Button Content="О нас" Style="{StaticResource SidebarButton}" Click="Nav_About_Click"/>
+        </StackPanel>
+
+        <Frame x:Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

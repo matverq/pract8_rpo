@@ -1,0 +1,16 @@
+﻿<Page x:Class="pract8_RPO.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:pract8_RPO"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AboutPage">
+    
+    <StackPanel Margin="20">
+        <TextBlock Text="О магазине" FontSize="24" FontWeight="Bold"/>
+        <TextBlock Text="Мы продаем лучшую электронику с 2020 года. Наши реквизиты: ИНН 123456789. Карта проезда: г. Москва, ул. Пушкина, дом 1." TextWrapping="Wrap" Margin="0,10"/>
+        <TextBlock Text="Ссылки на соцсети: VK, Telegram." Margin="0,10"/>
+    </StackPanel>
+</Page>
